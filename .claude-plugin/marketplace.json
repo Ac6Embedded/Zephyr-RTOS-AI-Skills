@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-marketplace.json",
+  "name": "zephyr-rtos-ai-skills",
+  "owner": {
+    "name": "Ac6",
+    "url": "https://www.ac6.fr"
+  },
+  "metadata": {
+    "description": "Agent skills for Zephyr RTOS development: devicetree and Kconfig"
+  },
+  "plugins": [
+    {
+      "name": "zephyr-skills",
+      "description": "All Zephyr RTOS skills: devicetree and Kconfig",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/zephyr-devicetree",
+        "./skills/zephyr-kconfig"
+      ]
+    },
+    {
+      "name": "zephyr-devicetree",
+      "description": "Zephyr devicetree: overlays, bindings, vendor pinctrl, /chosen and /aliases, flash partitions, build output and debugging",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/zephyr-devicetree"
+      ]
+    },
+    {
+      "name": "zephyr-kconfig",
+      "description": "Zephyr Kconfig: prj.conf and fragments, merge order, dependencies, Kconfig errors, sysbuild configuration",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/zephyr-kconfig"
+      ]
+    }
+  ]
+}
